@@ -2,8 +2,8 @@ name: Sync events from Google Calendar
 
 on:
   schedule:
-    # every hour at :05
-    - cron: "5 * * * *"
+    # every 15 minutes
+    - cron: "*/15 * * * *"
   workflow_dispatch:
   push:
     branches: [main]
