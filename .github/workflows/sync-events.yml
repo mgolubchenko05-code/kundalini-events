@@ -22,6 +22,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.x"
+      - name: Install dependencies
+        run: pip install icalendar python-dateutil
       - name: Sync Google Calendar -> events.json
         env:
           ICAL_URL: ${{ vars.ICAL_URL }}
