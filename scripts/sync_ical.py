@@ -135,9 +135,11 @@ def expand(vevent, window_start, window_end):
     dtstart = dtstart_prop.dt
     is_all_day = not isinstance(dtstart, datetime)
 
-    # Normalise dtstart to a London-aware datetime.
+    # Normalise dtstart to a London wall-clock datetime.
     if isinstance(dtstart, datetime):
-        if dtstart.tzinfo is None:
+        if dtstart.tzinfo is not None:
+            dtstart = dtstart.astimezone(LONDON)
+        else:
             dtstart = dtstart.replace(tzinfo=LONDON)
     else:
         # date (all-day) -> midnight London
@@ -148,7 +150,9 @@ def expand(vevent, window_start, window_end):
     if dtend is not None:
         end_val = dtend.dt
         if isinstance(end_val, datetime):
-            if end_val.tzinfo is None:
+            if end_val.tzinfo is not None:
+                end_val = end_val.astimezone(LONDON)
+            else:
                 end_val = end_val.replace(tzinfo=LONDON)
             duration = end_val - dtstart
         else:
