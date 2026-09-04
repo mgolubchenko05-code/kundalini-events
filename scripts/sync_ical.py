@@ -98,6 +98,11 @@ def build_row(summary, desc, location, start, end, uid, is_all_day=False):
     blurb = desc
     if payment_link:
         blurb = desc.replace(payment_link, "").strip(" \n")
+    # drop a leftover "Payment Link:" label line (the URL itself is the Book button)
+    def _is_label(line: str) -> bool:
+        cleaned = re.sub(r"[^a-z0-9: ]", "", line.lower()).replace(" ", "")
+        return cleaned in ("paymentlink", "paymentlink:")
+    blurb = "\n".join(ln for ln in blurb.split("\n") if not _is_label(ln)).strip(" \n")
 
     if is_all_day:
         time_str = "All day"
