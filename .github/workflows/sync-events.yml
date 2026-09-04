@@ -1,0 +1,35 @@
+name: Sync events from Google Calendar
+
+on:
+  schedule:
+    # every hour at :05
+    - cron: "5 * * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/sync_ical.py"
+      - ".github/workflows/sync-events.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Sync Google Calendar -> events.json
+        env:
+          ICAL_URL: ${{ vars.ICAL_URL }}
+        run: python3 scripts/sync_ical.py
+      - name: Commit if changed
+        run: |
+          git config user.name "calendar-sync"
+          git config user.email "actions@github.com"
+          git add events.json
+          git commit -m "sync events from Google Calendar" || echo "no changes"
+          git push
