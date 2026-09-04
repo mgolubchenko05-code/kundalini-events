@@ -45,9 +45,9 @@ PRICE_RE = re.compile(r"£\s*(\d+(?:\.\d+)?)|\b(\d+(?:\.\d+)?)\s*gbp\b", re.IGNO
 
 
 def wallclock(dt):
-    """Return naive wall-clock datetime in the event's own timezone."""
+    """Return naive wall-clock datetime in London time."""
     if dt.tzinfo is not None:
-        return dt.replace(tzinfo=None)
+        return dt.astimezone(LONDON).replace(tzinfo=None)
     return dt
 
 
@@ -196,15 +196,14 @@ def main():
 
     import urllib.request
 
-    req = urllib.request.Request(url, headers={"User-Agent": "kundalini-sync"})
-    with urllib.request.urlopen(req, timeout=30) as resp:
-        ics = resp.read().decode("utf-8", "replace")
-
     try:
+        req = urllib.request.Request(url, headers={"User-Agent": "kundalini-sync"})
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            ics = resp.read().decode("utf-8", "replace")
         cal = Calendar.from_ical(ics)
     except Exception:
         traceback.print_exc()
-        print("Failed to parse iCal; leaving events.json untouched.", file=sys.stderr)
+        print("Failed to fetch/parse iCal; leaving events.json untouched.", file=sys.stderr)
         sys.exit(0)
 
     now = datetime.now(LONDON)
