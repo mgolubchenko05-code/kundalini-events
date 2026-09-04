@@ -82,7 +82,7 @@ def get_exdates(vevent):
     return ex
 
 
-def build_row(summary, desc, location, start, end, uid):
+def build_row(summary, desc, location, start, end, uid, is_all_day=False):
     title = (summary or "Yoga Class").strip()
     desc = (desc or "").strip()
     location = (location or "").strip()
@@ -99,7 +99,9 @@ def build_row(summary, desc, location, start, end, uid):
     if payment_link:
         blurb = desc.replace(payment_link, "").strip(" \n")
 
-    if end and start.date() == end.date() and start.time() == end.time():
+    if is_all_day:
+        time_str = "All day"
+    elif end and start.date() == end.date() and start.time() == end.time():
         time_str = "All day"
     elif end:
         time_str = f"{fmt_time(start)} – {fmt_time(end)}"
@@ -121,14 +123,17 @@ def build_row(summary, desc, location, start, end, uid):
 
 
 def expand(vevent, window_start, window_end):
-    """Yield (start, end) naive wall-clock datetimes for this VEVENT.
+    """Yield (start, end, is_all_day) for this VEVENT.
 
-    window_start / window_end are London-aware datetimes.
+    window_start / window_end are London-aware datetimes. Non-recurring
+    events outside the window are skipped; recurring events are expanded
+    only within the window.
     """
     dtstart_prop = vevent.get("DTSTART")
     if dtstart_prop is None:
         return
     dtstart = dtstart_prop.dt
+    is_all_day = not isinstance(dtstart, datetime)
 
     # Normalise dtstart to a London-aware datetime.
     if isinstance(dtstart, datetime):
@@ -165,7 +170,9 @@ def expand(vevent, window_start, window_end):
         for o in occ:
             starts.append(o)
     else:
-        starts.append(dtstart)
+        # single (non-recurring) event — include only if it falls in the window
+        if window_start <= dtstart <= window_end:
+            starts.append(dtstart)
 
     for s in starts:
         sw = wallclock(s).replace(second=0, microsecond=0)
@@ -174,7 +181,7 @@ def expand(vevent, window_start, window_end):
         e = None
         if duration is not None:
             e = s + duration
-        yield (sw, wallclock(e).replace(second=0, microsecond=0) if e else None)
+        yield (sw, wallclock(e).replace(second=0, microsecond=0) if e else None, is_all_day)
 
 
 def main():
@@ -217,8 +224,8 @@ def main():
         l_str = l_str.replace("\\n", "\n").replace("\\,", ",").replace("\\;", ";")
 
         try:
-            for start, end in expand(vevent, window_start, window_end):
-                rows.append(build_row(s_str, d_str, l_str, start, end, u_str))
+            for start, end, is_all_day in expand(vevent, window_start, window_end):
+                rows.append(build_row(s_str, d_str, l_str, start, end, u_str, is_all_day))
         except Exception:
             traceback.print_exc()
             continue
