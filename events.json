@@ -10,5 +10,17 @@
     "price": 0,
     "paymentLink": "https://buy.stripe.com/eVq00i0Aw2kt121gaH4wM01",
     "description": "Come and experience the love of the sound and all the universes blessings"
+  },
+  {
+    "id": "48hicrp4jivibq4t2j5693ibjo@google.com@20260910T1500",
+    "title": "gogn bath",
+    "date": "2026-09-10T15:00:00",
+    "end": "2026-09-10T16:00:00",
+    "time": "3:00 PM \u2013 4:00 PM",
+    "category": "class",
+    "location": "The Glebe Centre, Rochdale",
+    "price": 0,
+    "paymentLink": "",
+    "description": "gogn bath with your teacher."
   }
 ]
