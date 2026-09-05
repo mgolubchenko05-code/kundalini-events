@@ -82,22 +82,38 @@ def get_exdates(vevent):
     return ex
 
 
+import html as html_module
+
 def build_row(summary, desc, location, start, end, uid, is_all_day=False):
     title = (summary or "Yoga Class").strip()
     desc = (desc or "").strip()
     location = (location or "").strip()
 
-    urls = URL_RE.findall(desc)
-    payment_link = urls[0] if urls else ""
+    # Google Calendar may store the description as HTML (auto-linked URLs,
+    # <br> line breaks, entities). Normalise to plain text and extract the
+    # first real URL as the booking link.
+    raw = desc
+
+    # 1. Pull URLs out of href="..." first (the link the user pasted), then
+    #    any plain-text URLs that survive stripping.
+    href_urls = re.findall(r'href=["\']([^"\']+)["\']', raw)
+
+    # 2. Strip HTML tags and unescape entities to get clean text.
+    text = re.sub(r"<[^>]+>", "\n", raw)          # tags -> newlines
+    text = html_module.unescape(text)
+    text = re.sub(r"\n\s*\n+", "\n", text).strip()
+
+    plain_urls = URL_RE.findall(text)
+    payment_link = (href_urls or plain_urls or [""])[0]
 
     price = 0
-    for m in PRICE_RE.finditer(desc + " " + title):
+    for m in PRICE_RE.finditer(text + " " + title):
         price = float(m.group(1) or m.group(2))
         break
 
-    blurb = desc
+    blurb = text
     if payment_link:
-        blurb = desc.replace(payment_link, "").strip(" \n")
+        blurb = blurb.replace(payment_link, "").strip(" \n")
     # drop a leftover "Payment Link:" label line (the URL itself is the Book button)
     def _is_label(line: str) -> bool:
         cleaned = re.sub(r"[^a-z0-9: ]", "", line.lower()).replace(" ", "")
