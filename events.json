@@ -12,15 +12,15 @@
     "description": "Come and experience the love of the sound and all the universes blessings"
   },
   {
-    "id": "48hicrp4jivibq4t2j5693ibjo@google.com@20260910T1500",
+    "id": "48hicrp4jivibq4t2j5693ibjo@google.com@20260905T1930",
     "title": "Gong Bath",
-    "date": "2026-09-10T15:00:00",
-    "end": "2026-09-10T16:00:00",
-    "time": "3:00 PM \u2013 4:00 PM",
+    "date": "2026-09-05T19:30:00",
+    "end": "2026-09-05T20:30:00",
+    "time": "7:30 PM \u2013 8:30 PM",
     "category": "sound",
     "location": "The Glebe Centre, Rochdale",
-    "price": 30.0,
+    "price": 0,
     "paymentLink": "https://book.stripe.com/7sY14m0AwcZ71218If4wM03",
-    "description": "Join us for a deeply restorative Gong Bath session. \u00a330 per person."
+    "description": "Join us for a deeply restorative Gong Bath session."
   }
 ]
