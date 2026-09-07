@@ -22,5 +22,17 @@
     "price": 0,
     "paymentLink": "https://book.stripe.com/7sY14m0AwcZ71218If4wM03",
     "description": "Join us for a deeply restorative Gong Bath session."
+  },
+  {
+    "id": "csg2d4Y52KBVr5VbF77MBb@Cal.com@20260918T1030",
+    "title": "Gong Bath Group Session",
+    "date": "2026-09-18T10:30:00",
+    "end": "2026-09-18T12:30:00",
+    "time": "10:30 AM \u2013 12:30 PM",
+    "category": "sound",
+    "location": "The Glebe Centre, Vicarage Rd, Crawley Down, Crawley, UK",
+    "price": 0,
+    "paymentLink": "https://app.cal.com/gong-bath-group-session",
+    "description": "What:\nGong Bath Group Session\nOrganizer timezone:\nEurope/London\nWho:\nTej Sangeet Kaur - Organizer\ntejsangeetkaur@gmail.com\nWhere:\nThe Glebe Centre, Vicarage Rd, Crawley Down, Crawley, UK\nDescription"
   }
 ]
