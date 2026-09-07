@@ -7,34 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-    <!-- Cal.com embed loader — sets up window.Cal command queue, then loads embed.js -->
-    <script type="text/javascript">
-      (function (C, A, L) {
-        let p = function (a, ar) { a.q.push(ar); };
-        let d = C.document;
-        C.Cal = C.Cal || function () {
-          let cal = C.Cal;
-          let ar = arguments;
-          if (!cal.loaded) {
-            cal.ns = {};
-            cal.q = cal.q || [];
-            d.head.appendChild(d.createElement("script")).src = A;
-            cal.loaded = true;
-          }
-          if (ar[0] === L) {
-            const api = function () { p(api, arguments); };
-            const namespace = ar[1];
-            api.q = api.q || [];
-            if (typeof namespace === "string") { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]); } else p(cal, ar);
-            return;
-          }
-          p(cal, ar);
-        };
-      })(window, "https://app.cal.com/embed/embed.js", "init");
-      Cal("init", { origin: "https://app.cal.com" });
-    </script>
-    <script type="module" crossorigin src="./assets/index-BLGjfiEk.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-Db-6vhKB.css">
+    <script type="module" crossorigin src="./assets/index-CaKER7Yt.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-Dx3xq9mj.css">
   </head>
   <body style="background:#f7f3ec;margin:0">
     <div id="root"></div>
