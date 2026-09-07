@@ -1,38 +1,74 @@
 [
   {
-    "id": "72jk3u2v8pk64h0apgute5jne8@google.com@20260827T1430",
-    "title": "Kundalini Yoga - Gong Bath",
-    "date": "2026-08-27T14:30:00",
-    "end": "2026-08-27T18:30:00",
-    "time": "2:30 PM \u2013 6:30 PM",
-    "category": "sound",
-    "location": "The Glebe Centre, Vicarage Rd, Crawley Down, Crawley RH10 4JJ, UK",
-    "price": 0,
-    "paymentLink": "https://buy.stripe.com/eVq00i0Aw2kt121gaH4wM01",
-    "description": "Come and experience the love of the sound and all the universes blessings"
-  },
-  {
-    "id": "48hicrp4jivibq4t2j5693ibjo@google.com@20260905T1930",
-    "title": "Gong Bath",
-    "date": "2026-09-05T19:30:00",
-    "end": "2026-09-05T20:30:00",
-    "time": "7:30 PM \u2013 8:30 PM",
-    "category": "sound",
+    "id": "5adr4uglmeesp9t96j9chhv6ol@google.com@20260911T1030",
+    "title": "Kundalini Yoga Class",
+    "date": "2026-09-11T10:30:00",
+    "end": "2026-09-11T12:30:00",
+    "time": "10:30 AM \u2013 12:30 PM",
+    "category": "class",
     "location": "The Glebe Centre, Rochdale",
     "price": 0,
-    "paymentLink": "https://book.stripe.com/7sY14m0AwcZ71218If4wM03",
-    "description": "Join us for a deeply restorative Gong Bath session."
+    "paymentLink": "",
+    "description": "Kundalini Yoga Class with your teacher."
   },
   {
-    "id": "csg2d4Y52KBVr5VbF77MBb@Cal.com@20260911T1830",
+    "id": "5f83l3kb6bkacgl4alra3f6amj@google.com@20260911T1830",
     "title": "New Moon Gong Bath",
     "date": "2026-09-11T18:30:00",
     "end": "2026-09-11T20:30:00",
     "time": "6:30 PM \u2013 8:30 PM",
     "category": "sound",
-    "location": "The Glebe Centre, Vicarage Rd, Crawley Down, Crawley, UK",
+    "location": "The Glebe Centre, Rochdale",
     "price": 0,
-    "paymentLink": "https://app.cal.com/gong-bath-group-session",
-    "description": "What:\nNew Moon Gong Bath\nOrganizer timezone:\nEurope/London\nWho:\nTej Sangeet Kaur - Organizer\ntejsangeetkaur@gmail.com\nWhere:\nThe Glebe Centre, Vicarage Rd, Crawley Down, Crawley, UK\nDescription"
+    "paymentLink": "",
+    "description": "New Moon Gong Bath with your teacher."
+  },
+  {
+    "id": "7ts8ofmfrb510496cfvahvt4ts@google.com@20260919T1000",
+    "title": "Autumn Equinox Morning Retreat",
+    "date": "2026-09-19T10:00:00",
+    "end": "2026-09-19T14:00:00",
+    "time": "10:00 AM \u2013 2:00 PM",
+    "category": "workshop",
+    "location": "The Glebe Centre, Rochdale",
+    "price": 0,
+    "paymentLink": "",
+    "description": "Autumn Equinox Morning Retreat with your teacher."
+  },
+  {
+    "id": "7dle79hn692hi95glso95tm9cu@google.com@20260925T1030",
+    "title": "Kundalini Yoga Class",
+    "date": "2026-09-25T10:30:00",
+    "end": "2026-09-25T12:30:00",
+    "time": "10:30 AM \u2013 12:30 PM",
+    "category": "class",
+    "location": "The Glebe Centre, Rochdale",
+    "price": 0,
+    "paymentLink": "",
+    "description": "Kundalini Yoga Class with your teacher."
+  },
+  {
+    "id": "41t6igpgst53lm0nonm7dg8rn5@google.com@20260926T1800",
+    "title": "Full Moon Gong Bath",
+    "date": "2026-09-26T18:00:00",
+    "end": "2026-09-26T20:00:00",
+    "time": "6:00 PM \u2013 8:00 PM",
+    "category": "sound",
+    "location": "The Glebe Centre, Rochdale",
+    "price": 0,
+    "paymentLink": "",
+    "description": "Full Moon Gong Bath with your teacher."
+  },
+  {
+    "id": "59ojdmo2mj04s5n16q5nll5cuc@google.com@20261010T2100",
+    "title": "All Night Gong Bath",
+    "date": "2026-10-10T21:00:00",
+    "end": "2026-10-11T08:00:00",
+    "time": "9:00 PM \u2013 8:00 AM",
+    "category": "sound",
+    "location": "The Glebe Centre, Rochdale",
+    "price": 0,
+    "paymentLink": "",
+    "description": "All Night Gong Bath with your teacher."
   }
 ]
