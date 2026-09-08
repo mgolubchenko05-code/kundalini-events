@@ -136,7 +136,7 @@ def build_row(summary, desc, location, start, end, uid, is_all_day=False):
         "end": end.strftime("%Y-%m-%dT%H:%M:%S") if end else None,
         "time": time_str,
         "category": detect_category(title),
-        "location": location or "The Glebe Centre, Rochdale",
+        "location": location or "The Glebe Centre, Vicarage Rd, Crawley Down, Crawley RH10 4JJ, UK",
         "price": price,
         "paymentLink": payment_link,
         "description": blurb or f"{title} with your teacher.",
@@ -209,6 +209,23 @@ def expand(vevent, window_start, window_end):
         yield (sw, wallclock(e).replace(second=0, microsecond=0) if e else None, is_all_day)
 
 
+def _decode_prop(prop):
+    """Decode an icalendar property to a cleaned string."""
+    if prop is None:
+        return ""
+    s = prop.to_ical().decode() if hasattr(prop, "to_ical") else str(prop)
+    return s.replace("\\n", "\n").replace("\\,", ",").replace("\\;", ";")
+
+
+def _to_wallclock(dt):
+    """Normalise a datetime (possibly tz-aware) to London wall-clock."""
+    if dt.tzinfo is not None:
+        dt = dt.astimezone(LONDON)
+    else:
+        dt = dt.replace(tzinfo=LONDON)
+    return wallclock(dt).replace(second=0, microsecond=0)
+
+
 def main():
     url = os.environ.get("ICAL_URL", "").strip()
     if not url or url.startswith("REPLACE_"):
@@ -231,25 +248,46 @@ def main():
     window_start = now - timedelta(days=60)
     window_end = now + timedelta(days=180)
 
-    rows = []
+    # First pass: collect overridden instances (VEVENTs with a RECURRENCE-ID).
+    # An override replaces the master recurring event's occurrence for that date
+    # (e.g. when mum edits one class's description to add a payment link).
+    # Keyed by (uid, wallclock start) so we can swap in the override's data.
+    overrides = {}
+    masters = []
     for vevent in cal.walk("VEVENT"):
-        summary = vevent.get("SUMMARY")
-        desc = vevent.get("DESCRIPTION")
-        location = vevent.get("LOCATION")
-        uid = vevent.get("UID")
-        # decode string props
-        s_str = summary.to_ical().decode() if summary is not None else ""
-        d_str = desc.to_ical().decode() if desc is not None else ""
-        l_str = location.to_ical().decode() if location is not None else ""
-        u_str = uid.to_ical().decode() if uid is not None else None
-        # unescape per iCal rules
-        s_str = s_str.replace("\\n", "\n").replace("\\,", ",").replace("\\;", ";")
-        d_str = d_str.replace("\\n", "\n").replace("\\,", ",").replace("\\;", ";")
-        l_str = l_str.replace("\\n", "\n").replace("\\,", ",").replace("\\;", ";")
+        rec_id_prop = vevent.get("RECURRENCE-ID")
+        if rec_id_prop is not None:
+            dt = rec_id_prop.dt
+            if isinstance(dt, datetime):
+                uid = vevent.get("UID").to_ical().decode() if vevent.get("UID") is not None else ""
+                overrides[(uid, _to_wallclock(dt))] = vevent
+            continue
+        masters.append(vevent)
+
+    rows = []
+    for vevent in masters:
+        uid_prop = vevent.get("UID")
+        u_str = uid_prop.to_ical().decode() if uid_prop is not None else None
+        base_s = _decode_prop(vevent.get("SUMMARY"))
+        base_d = _decode_prop(vevent.get("DESCRIPTION"))
+        base_l = _decode_prop(vevent.get("LOCATION"))
 
         try:
             for start, end, is_all_day in expand(vevent, window_start, window_end):
-                rows.append(build_row(s_str, d_str, l_str, start, end, u_str, is_all_day))
+                ov = overrides.get((u_str or "", start))
+                if ov is not None:
+                    # Use the override's data (it supersedes the master for this date)
+                    s_str = _decode_prop(ov.get("SUMMARY")) or base_s
+                    d_str = _decode_prop(ov.get("DESCRIPTION")) or base_d
+                    l_str = _decode_prop(ov.get("LOCATION")) or base_l
+                    ov_end = end
+                    if ov.get("DTEND") is not None:
+                        ev = ov.get("DTEND").dt
+                        if isinstance(ev, datetime):
+                            ov_end = _to_wallclock(ev)
+                    rows.append(build_row(s_str, d_str, l_str, start, ov_end, u_str, is_all_day))
+                else:
+                    rows.append(build_row(base_s, base_d, base_l, start, end, u_str, is_all_day))
         except Exception:
             traceback.print_exc()
             continue
