@@ -32,8 +32,8 @@
     "category": "workshop",
     "location": "The Glebe Centre, Vicarage Rd, Crawley Down, Crawley RH10 4JJ, UK",
     "price": 0,
-    "paymentLink": "",
-    "description": "Autumn Equinox Morning Retreat with your teacher."
+    "paymentLink": "https://book.stripe.com/fZu3cu3MI9MVcKJ1fN4wM07",
+    "description": "Join me for a nourishing morning retreat devoted to movement, meditation, sacred sound and deep relaxation.\u00a0\nWe will begin with Kundalini Yoga to awaken the body, open the breath and prepare the nervous system for meditation.\nTogether, we will then journey through an extended Kirtan Kriya Meditation, using the mantra Sa Ta Na Ma with sound, rhythm, mudra and focus. This beautiful practice reflects the natural cycle of life\u2014birth, life, transformation and renewal\u2014and supports us in moving with greater balance, clarity and flow.\nWe will complete our morning with a deeply restorative Gong Bath, allowing the vibrations of the gongs to release tension, quieten the mind and gently integrate the experience."
   },
   {
     "id": "7dle79hn692hi95glso95tm9cu@google.com@20260925T1030",
@@ -44,7 +44,7 @@
     "category": "class",
     "location": "The Glebe Centre, Vicarage Rd, Crawley Down, Crawley RH10 4JJ, UK",
     "price": 0,
-    "paymentLink": "",
+    "paymentLink": "https://book.stripe.com/eVqfZg6YU6AJ4ed2jR4wM08",
     "description": "Kundalini Yoga Class with your teacher."
   },
   {
