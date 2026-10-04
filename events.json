@@ -108,6 +108,18 @@
     "description": "Kundalini Yoga is the yoga of awareness using the movement, breath and mantra"
   },
   {
+    "id": "1leojp1tmj43ciiv5b50v4r82k@google.com@20261023T0000",
+    "title": "Yoga Class",
+    "date": "2026-10-23T00:00:00",
+    "end": "2026-10-24T00:00:00",
+    "time": "All day",
+    "category": "class",
+    "location": "The Glebe Centre, Vicarage Rd, Crawley Down, Crawley RH10 4JJ, UK",
+    "price": 0,
+    "paymentLink": "",
+    "description": "Yoga Class with your teacher."
+  },
+  {
     "id": "7ibtv35tiao4ascb76prrvv5q1@google.com@20261023T1030",
     "title": "Kundalini Yoga Class",
     "date": "2026-10-23T10:30:00",
@@ -118,6 +130,18 @@
     "price": 0,
     "paymentLink": "",
     "description": "Kundalini Yoga is the yoga of awareness using the movement, breath and mantra"
+  },
+  {
+    "id": "4k7d56rd9gp0e2ht61avjbfea8@google.com@20261023T1830",
+    "title": "Male Gong Bath",
+    "date": "2026-10-23T18:30:00",
+    "end": "2026-10-23T20:00:00",
+    "time": "6:30 PM \u2013 8:00 PM",
+    "category": "sound",
+    "location": "The Glebe Centre, Vicarage Rd, Crawley Down, Crawley RH10 4JJ, UK",
+    "price": 0,
+    "paymentLink": "https://book.stripe.com/7sY9AS6YU8IReSR1fN4wM0b",
+    "description": "Male Gong Bath for Men only\nBooking Link:\u00a0"
   },
   {
     "id": "7ibtv35tiao4ascb76prrvv5q1@google.com@20261030T1030",
