@@ -132,6 +132,30 @@
     "description": "Male Gong Bath for Men only\nBooking Link:\u00a0"
   },
   {
+    "id": "4pp9nr6nbaah7cse71l5d4ki23@google.com@20261025T1800",
+    "title": "Full Moon Gong Bath",
+    "date": "2026-10-25T18:00:00",
+    "end": "2026-10-25T20:00:00",
+    "time": "6:00 PM \u2013 8:00 PM",
+    "category": "sound",
+    "location": "The Glebe Centre, Vicarage Rd, Crawley Down, Crawley RH10 4JJ, UK",
+    "price": 0,
+    "paymentLink": "https://book.stripe.com/fZu3cu2IEbV34edaQn4wM0c",
+    "description": "Full Moon Gong Bath in Taurus 25th October 6pm"
+  },
+  {
+    "id": "78oiltkqn1fcf2s89acvhecj60@google.com@20261026T1815",
+    "title": "Kundalini Yoga Class",
+    "date": "2026-10-26T18:15:00",
+    "end": "2026-10-26T20:15:00",
+    "time": "6:15 PM \u2013 8:15 PM",
+    "category": "class",
+    "location": "The Glebe Centre, Vicarage Rd, Crawley Down, Crawley RH10 4JJ, UK",
+    "price": 0,
+    "paymentLink": "",
+    "description": "Kundalini Yoga Class with your teacher."
+  },
+  {
     "id": "7ibtv35tiao4ascb76prrvv5q1_R20261009T093000@google.com@20261030T1030",
     "title": "Kundalini Yoga Class",
     "date": "2026-10-30T10:30:00",
@@ -142,6 +166,18 @@
     "price": 0,
     "paymentLink": "https://book.stripe.com/eVqfZg6YU6AJ4ed2jR4wM08",
     "description": "Kundalini Yoga is the yoga of awareness using the movement, breath and mantra"
+  },
+  {
+    "id": "78oiltkqn1fcf2s89acvhecj60@google.com@20261102T1815",
+    "title": "Kundalini Yoga Class",
+    "date": "2026-11-02T18:15:00",
+    "end": "2026-11-02T20:15:00",
+    "time": "6:15 PM \u2013 8:15 PM",
+    "category": "class",
+    "location": "The Glebe Centre, Vicarage Rd, Crawley Down, Crawley RH10 4JJ, UK",
+    "price": 0,
+    "paymentLink": "",
+    "description": "Kundalini Yoga Class with your teacher."
   },
   {
     "id": "7ibtv35tiao4ascb76prrvv5q1_R20261009T093000@google.com@20261106T1030",
@@ -156,6 +192,18 @@
     "description": "Kundalini Yoga is the yoga of awareness using the movement, breath and mantra"
   },
   {
+    "id": "78oiltkqn1fcf2s89acvhecj60@google.com@20261109T1815",
+    "title": "Kundalini Yoga Class",
+    "date": "2026-11-09T18:15:00",
+    "end": "2026-11-09T20:15:00",
+    "time": "6:15 PM \u2013 8:15 PM",
+    "category": "class",
+    "location": "The Glebe Centre, Vicarage Rd, Crawley Down, Crawley RH10 4JJ, UK",
+    "price": 0,
+    "paymentLink": "",
+    "description": "Kundalini Yoga Class with your teacher."
+  },
+  {
     "id": "7ibtv35tiao4ascb76prrvv5q1_R20261009T093000@google.com@20261113T1030",
     "title": "Kundalini Yoga Class",
     "date": "2026-11-13T10:30:00",
@@ -166,6 +214,30 @@
     "price": 0,
     "paymentLink": "https://book.stripe.com/eVqfZg6YU6AJ4ed2jR4wM08",
     "description": "Kundalini Yoga is the yoga of awareness using the movement, breath and mantra"
+  },
+  {
+    "id": "78oiltkqn1fcf2s89acvhecj60@google.com@20261116T1815",
+    "title": "Kundalini Yoga Class",
+    "date": "2026-11-16T18:15:00",
+    "end": "2026-11-16T20:15:00",
+    "time": "6:15 PM \u2013 8:15 PM",
+    "category": "class",
+    "location": "The Glebe Centre, Vicarage Rd, Crawley Down, Crawley RH10 4JJ, UK",
+    "price": 0,
+    "paymentLink": "",
+    "description": "Kundalini Yoga Class with your teacher."
+  },
+  {
+    "id": "78oiltkqn1fcf2s89acvhecj60@google.com@20261123T1815",
+    "title": "Kundalini Yoga Class",
+    "date": "2026-11-23T18:15:00",
+    "end": "2026-11-23T20:15:00",
+    "time": "6:15 PM \u2013 8:15 PM",
+    "category": "class",
+    "location": "The Glebe Centre, Vicarage Rd, Crawley Down, Crawley RH10 4JJ, UK",
+    "price": 0,
+    "paymentLink": "",
+    "description": "Kundalini Yoga Class with your teacher."
   },
   {
     "id": "7ibtv35tiao4ascb76prrvv5q1_R20261009T093000@google.com@20261127T1030",
@@ -180,6 +252,18 @@
     "description": "Kundalini Yoga is the yoga of awareness using the movement, breath and mantra"
   },
   {
+    "id": "78oiltkqn1fcf2s89acvhecj60@google.com@20261130T1815",
+    "title": "Kundalini Yoga Class",
+    "date": "2026-11-30T18:15:00",
+    "end": "2026-11-30T20:15:00",
+    "time": "6:15 PM \u2013 8:15 PM",
+    "category": "class",
+    "location": "The Glebe Centre, Vicarage Rd, Crawley Down, Crawley RH10 4JJ, UK",
+    "price": 0,
+    "paymentLink": "",
+    "description": "Kundalini Yoga Class with your teacher."
+  },
+  {
     "id": "7ibtv35tiao4ascb76prrvv5q1_R20261009T093000@google.com@20261204T1030",
     "title": "Kundalini Yoga Class",
     "date": "2026-12-04T10:30:00",
@@ -190,6 +274,18 @@
     "price": 0,
     "paymentLink": "https://book.stripe.com/eVqfZg6YU6AJ4ed2jR4wM08",
     "description": "Kundalini Yoga is the yoga of awareness using the movement, breath and mantra"
+  },
+  {
+    "id": "78oiltkqn1fcf2s89acvhecj60@google.com@20261207T1815",
+    "title": "Kundalini Yoga Class",
+    "date": "2026-12-07T18:15:00",
+    "end": "2026-12-07T20:15:00",
+    "time": "6:15 PM \u2013 8:15 PM",
+    "category": "class",
+    "location": "The Glebe Centre, Vicarage Rd, Crawley Down, Crawley RH10 4JJ, UK",
+    "price": 0,
+    "paymentLink": "",
+    "description": "Kundalini Yoga Class with your teacher."
   },
   {
     "id": "7ibtv35tiao4ascb76prrvv5q1_R20261009T093000@google.com@20261211T1030",
@@ -204,6 +300,18 @@
     "description": "Kundalini Yoga is the yoga of awareness using the movement, breath and mantra"
   },
   {
+    "id": "78oiltkqn1fcf2s89acvhecj60@google.com@20261214T1815",
+    "title": "Kundalini Yoga Class",
+    "date": "2026-12-14T18:15:00",
+    "end": "2026-12-14T20:15:00",
+    "time": "6:15 PM \u2013 8:15 PM",
+    "category": "class",
+    "location": "The Glebe Centre, Vicarage Rd, Crawley Down, Crawley RH10 4JJ, UK",
+    "price": 0,
+    "paymentLink": "",
+    "description": "Kundalini Yoga Class with your teacher."
+  },
+  {
     "id": "7ibtv35tiao4ascb76prrvv5q1_R20261009T093000@google.com@20261218T1030",
     "title": "Kundalini Yoga Class",
     "date": "2026-12-18T10:30:00",
@@ -214,5 +322,17 @@
     "price": 0,
     "paymentLink": "https://book.stripe.com/eVqfZg6YU6AJ4ed2jR4wM08",
     "description": "Kundalini Yoga is the yoga of awareness using the movement, breath and mantra"
+  },
+  {
+    "id": "78oiltkqn1fcf2s89acvhecj60@google.com@20261221T1815",
+    "title": "Kundalini Yoga Class",
+    "date": "2026-12-21T18:15:00",
+    "end": "2026-12-21T20:15:00",
+    "time": "6:15 PM \u2013 8:15 PM",
+    "category": "class",
+    "location": "The Glebe Centre, Vicarage Rd, Crawley Down, Crawley RH10 4JJ, UK",
+    "price": 0,
+    "paymentLink": "",
+    "description": "Kundalini Yoga Class with your teacher."
   }
 ]
