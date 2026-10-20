@@ -334,5 +334,17 @@
     "price": 0,
     "paymentLink": "",
     "description": "Kundalini Yoga Class with your teacher."
+  },
+  {
+    "id": "3k5b48tv8nstapqfct327dge46@google.com@20270227T2100",
+    "title": "All Night Gong Bath",
+    "date": "2027-02-27T21:00:00",
+    "end": "2027-02-28T08:00:00",
+    "time": "9:00 PM \u2013 8:00 AM",
+    "category": "sound",
+    "location": "The Ark, Mount Ln, Turners Hill, Crawley RH10 4RA, UK",
+    "price": 0,
+    "paymentLink": "",
+    "description": "All Night Gong Bath with your teacher."
   }
 ]
