@@ -1,4 +1,5 @@
 name: Sync events from Google Calendar
+# One-time sync trigger requested 2026-10-20 (no behavioural changes)
 
 on:
   schedule:
