@@ -152,8 +152,8 @@
     "category": "class",
     "location": "The Glebe Centre, Vicarage Rd, Crawley Down, Crawley RH10 4JJ, UK",
     "price": 0,
-    "paymentLink": "",
-    "description": "Kundalini Yoga Class with your teacher."
+    "paymentLink": "https://book.stripe.com/bJe00ifvq9MV6mlbUr4wM0f",
+    "description": "Powerful practice combining breathwork, movement, meditation and mantra to release stress, strengthen your nevous system and activate pineal gland - the master gland to reconnect to your ineer peace and Vitality."
   },
   {
     "id": "7ibtv35tiao4ascb76prrvv5q1_R20261009T093000@google.com@20261030T1030",
@@ -176,8 +176,8 @@
     "category": "class",
     "location": "The Glebe Centre, Vicarage Rd, Crawley Down, Crawley RH10 4JJ, UK",
     "price": 0,
-    "paymentLink": "",
-    "description": "Kundalini Yoga Class with your teacher."
+    "paymentLink": "https://book.stripe.com/bJe00ifvq9MV6mlbUr4wM0f",
+    "description": "Powerful practice combining breathwork, movement, meditation and mantra to release stress, strengthen your nevous system and activate pineal gland - the master gland to reconnect to your ineer peace and Vitality."
   },
   {
     "id": "7ibtv35tiao4ascb76prrvv5q1_R20261009T093000@google.com@20261106T1030",
@@ -192,6 +192,18 @@
     "description": "Kundalini Yoga is the yoga of awareness using the movement, breath and mantra"
   },
   {
+    "id": "47aoskk3ae6nm6g9rgb6l884gp@google.com@20261108T1700",
+    "title": "New Moon Gong Bath",
+    "date": "2026-11-08T17:00:00",
+    "end": "2026-11-08T19:00:00",
+    "time": "5:00 PM \u2013 7:00 PM",
+    "category": "sound",
+    "location": "The Glebe Centre, Vicarage Rd, Crawley Down, Crawley RH10 4JJ, UK",
+    "price": 0,
+    "paymentLink": "https://book.stripe.com/eVq6oG5UQ4sB4ed5w34wM0g",
+    "description": "A sound journey of transformation, surrender and new beginnings. Release the old and create space for the new."
+  },
+  {
     "id": "78oiltkqn1fcf2s89acvhecj60@google.com@20261109T1815",
     "title": "Kundalini Yoga Class",
     "date": "2026-11-09T18:15:00",
@@ -200,20 +212,8 @@
     "category": "class",
     "location": "The Glebe Centre, Vicarage Rd, Crawley Down, Crawley RH10 4JJ, UK",
     "price": 0,
-    "paymentLink": "",
-    "description": "Kundalini Yoga Class with your teacher."
-  },
-  {
-    "id": "7ibtv35tiao4ascb76prrvv5q1_R20261009T093000@google.com@20261113T1030",
-    "title": "Kundalini Yoga Class",
-    "date": "2026-11-13T10:30:00",
-    "end": "2026-11-13T12:30:00",
-    "time": "10:30 AM \u2013 12:30 PM",
-    "category": "class",
-    "location": "The Glebe Centre, Vicarage Rd, Crawley Down, Crawley RH10 4JJ, UK",
-    "price": 0,
-    "paymentLink": "https://book.stripe.com/eVqfZg6YU6AJ4ed2jR4wM08",
-    "description": "Kundalini Yoga is the yoga of awareness using the movement, breath and mantra"
+    "paymentLink": "https://book.stripe.com/bJe00ifvq9MV6mlbUr4wM0f",
+    "description": "Powerful practice combining breathwork, movement, meditation and mantra to release stress, strengthen your nevous system and activate pineal gland - the master gland to reconnect to your ineer peace and Vitality."
   },
   {
     "id": "78oiltkqn1fcf2s89acvhecj60@google.com@20261116T1815",
@@ -224,8 +224,8 @@
     "category": "class",
     "location": "The Glebe Centre, Vicarage Rd, Crawley Down, Crawley RH10 4JJ, UK",
     "price": 0,
-    "paymentLink": "",
-    "description": "Kundalini Yoga Class with your teacher."
+    "paymentLink": "https://book.stripe.com/bJe00ifvq9MV6mlbUr4wM0f",
+    "description": "Powerful practice combining breathwork, movement, meditation and mantra to release stress, strengthen your nevous system and activate pineal gland - the master gland to reconnect to your ineer peace and Vitality."
   },
   {
     "id": "78oiltkqn1fcf2s89acvhecj60@google.com@20261123T1815",
@@ -236,8 +236,8 @@
     "category": "class",
     "location": "The Glebe Centre, Vicarage Rd, Crawley Down, Crawley RH10 4JJ, UK",
     "price": 0,
-    "paymentLink": "",
-    "description": "Kundalini Yoga Class with your teacher."
+    "paymentLink": "https://book.stripe.com/bJe00ifvq9MV6mlbUr4wM0f",
+    "description": "Powerful practice combining breathwork, movement, meditation and mantra to release stress, strengthen your nevous system and activate pineal gland - the master gland to reconnect to your ineer peace and Vitality."
   },
   {
     "id": "7ibtv35tiao4ascb76prrvv5q1_R20261009T093000@google.com@20261127T1030",
@@ -260,8 +260,8 @@
     "category": "class",
     "location": "The Glebe Centre, Vicarage Rd, Crawley Down, Crawley RH10 4JJ, UK",
     "price": 0,
-    "paymentLink": "",
-    "description": "Kundalini Yoga Class with your teacher."
+    "paymentLink": "https://book.stripe.com/bJe00ifvq9MV6mlbUr4wM0f",
+    "description": "Powerful practice combining breathwork, movement, meditation and mantra to release stress, strengthen your nevous system and activate pineal gland - the master gland to reconnect to your ineer peace and Vitality."
   },
   {
     "id": "7ibtv35tiao4ascb76prrvv5q1_R20261009T093000@google.com@20261204T1030",
@@ -284,8 +284,8 @@
     "category": "class",
     "location": "The Glebe Centre, Vicarage Rd, Crawley Down, Crawley RH10 4JJ, UK",
     "price": 0,
-    "paymentLink": "",
-    "description": "Kundalini Yoga Class with your teacher."
+    "paymentLink": "https://book.stripe.com/bJe00ifvq9MV6mlbUr4wM0f",
+    "description": "Powerful practice combining breathwork, movement, meditation and mantra to release stress, strengthen your nevous system and activate pineal gland - the master gland to reconnect to your ineer peace and Vitality."
   },
   {
     "id": "7ibtv35tiao4ascb76prrvv5q1_R20261009T093000@google.com@20261211T1030",
@@ -308,8 +308,8 @@
     "category": "class",
     "location": "The Glebe Centre, Vicarage Rd, Crawley Down, Crawley RH10 4JJ, UK",
     "price": 0,
-    "paymentLink": "",
-    "description": "Kundalini Yoga Class with your teacher."
+    "paymentLink": "https://book.stripe.com/bJe00ifvq9MV6mlbUr4wM0f",
+    "description": "Powerful practice combining breathwork, movement, meditation and mantra to release stress, strengthen your nevous system and activate pineal gland - the master gland to reconnect to your ineer peace and Vitality."
   },
   {
     "id": "7ibtv35tiao4ascb76prrvv5q1_R20261009T093000@google.com@20261218T1030",
@@ -332,8 +332,8 @@
     "category": "class",
     "location": "The Glebe Centre, Vicarage Rd, Crawley Down, Crawley RH10 4JJ, UK",
     "price": 0,
-    "paymentLink": "",
-    "description": "Kundalini Yoga Class with your teacher."
+    "paymentLink": "https://book.stripe.com/bJe00ifvq9MV6mlbUr4wM0f",
+    "description": "Powerful practice combining breathwork, movement, meditation and mantra to release stress, strengthen your nevous system and activate pineal gland - the master gland to reconnect to your ineer peace and Vitality."
   },
   {
     "id": "3k5b48tv8nstapqfct327dge46@google.com@20270227T2100",
